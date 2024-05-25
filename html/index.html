@@ -24,13 +24,13 @@
                 </span>
                 <div class="nav-search">
                     <div class="nav-search-facade">
-                        <span id="nav-search-label">Todos</span>
+                        <span id="nav-search-label" style="display: none;">Todos</span>
                         <i class="nav-icon"></i>
                     </div>
                     <label for="searchdropdownbox">Selecciona el departamento donde quieras hacer la compra</label>
                 </div>
-                <select name="type-of-user" title="Buscar en" class="nav-search-dropdown">
-                    <option selected="seleccion" value="search-alias-Todos los departamentos"></option>
+                <select name="type-of-user" title="Buscar en" class="nav-search-dropdown" style="display: block; top:2.5px">
+                    <option selected="seleccion" value="search-alias-">Todos los departamentos</option>
                     <option value="search-alias-">Arte y artesanias</option>
                     <option value="search-alias-">Automotriz</option>
                     <option value="search-alias-">Bebe</option>
@@ -62,9 +62,153 @@
             <div class="nav-fill">
                 <div class="nav-search-field">
                     <label for="textbox">Buscar Amazon</label>
-                    <input type="text" id="textbox" placeholder="Busar Amazon">
+                    <input type="text" id="textbox" placeholder="Busar Amazon" style="display: none;">
                 </div>
+                <div class="nav-right">
+                    <div class="nav-tools">
+                        <a href="https://www.amazon.com/-/es/customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F-%2Fes%2F&ref_=topnav_lang_ais" 
+                        class="nav-a" aria-label="Elegi un idioma para hacer compras">
+                        <span class="cont-nav-line">
+                            <span class="nav-line-1"></span>
+                            <span class="nav-line-2">
+                                <span class="cont-nav-flag-us"></span>
+                                <div>ES</div>
+                                <span class="nav-icon nav-arrow" style="visibility: visible;"></span>
+                            </span>
+                        </span>
+                    </a>
+                    <a href="https://www.amazon.com/-/es/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F-%2Fes%2F%3Fref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+                    class="nav-a nav-a-2">
+                    <div class="nav-line-1-cont">
+                        <span class="nav-line-1">
+                            Hola, identificate
+                        </span>
+                        <span class="nav-line-2">
+                            "Cuenta y Listas"
+                            <span class="nav-icon nav-arrow" style="visibility: visible;"></span>
+                        </span>
+                    </div>
+                    </a>
+                    <a href="https://www.amazon.com/-/es/gp/css/order-history?ref_=nav_orders_first" class="nav-a nav-a-2">
+                        <span class="nav-line-1">Devoluciones</span>
+                        <span class="nav-line-2">
+                            Y Pedidos
+                            <span class="nav-icon nav-arrow"></span>
+                        </span>
+                    </a>
+                    <a href="https://www.amazon.com/-/es/gp/cart/view.html?ref_=nav_cart" class="nav-a nav-a-2" aria-label="0 articulos en el carrito">
+                        <div id="nav-cart">
+                            <span id="nav-cart-count" aria-hidden="true" class="nav-cart-count">0</span>
+                            <span class="nav-cart-icon"></span>
+                        </div>
+                        <div id="nav-cart-text">
+                            <span class="nav-line-1" aria-hidden="true"></span>
+                            <spa class="nav-line-2">
+                                "Carrito"
+                                <span class="nav-icon nav-arow"></span>
+                            </spa>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <div id="nav-flyout">
+                    <div class="nav-flyout" style="display: none; position: absolute; top:-11px; left: 283.297px; width: 359px;">
+                        <div class="nav-template nav-flyout-cont"></div>
+                        <div class="autocomplete-results-cont">
+                            <div class="two-pane-results-cont">
+                                <div class="left-pane-results-cont" style="flex: 1 1 0%;height: auto;">
+                                    <div class="s-suggestion-trending-cont">
+                                        <div class="s-suggestion-icon-trending">
+                                            <i class="s-suggestion-icon"></i>
+                                        </div>
+                                        <div class="s-suggestion-trending" role="button" aria-label="fire tv stick">
+                                            <span class="s-heavy">fire tv stick</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s-suggestion-trending-cont">
+                                    <div class="s-suggestion-icon-trending">
+                                        <i class="s-suggestion-icon"></i>
+                                    </div>
+                                    <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                                        <span class="s-heavy">15 days cleanse</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-suggestion-trending-cont">
+                                <div class="s-suggestion-icon-trending">
+                                    <i class="s-suggestion-icon"></i>
+                                </div>
+                                <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                                    <span class="s-heavy">15 days cleanse</span>
+                                </div>
+                        </div>
+                                <div class="s-suggestion-trending-cont">
+                            <div class="s-suggestion-icon-trending">
+                                <i class="s-suggestion-icon"></i>
+                            </div>
+                            <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                                <span class="s-heavy">15 days cleanse</span>
+                            </div>
+                    </div>
+                                <div class="s-suggestion-trending-cont">
+                        <div class="s-suggestion-icon-trending">
+                            <i class="s-suggestion-icon"></i>
+                        </div>
+                        <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                            <span class="s-heavy">15 days cleanse</span>
+                        </div>
+                </div>
+                <div class="s-suggestion-trending-cont">
+                    <div class="s-suggestion-icon-trending">
+                        <i class="s-suggestion-icon"></i>
+                    </div>
+                    <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                        <span class="s-heavy">15 days cleanse</span>
+                    </div>
             </div>
+            <div class="s-suggestion-trending-cont">
+                <div class="s-suggestion-icon-trending">
+                    <i class="s-suggestion-icon"></i>
+                </div>
+                <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                    <span class="s-heavy">15 days cleanse</span>
+                </div>
+                <div class="s-suggestion-trending-cont">
+                    <div class="s-suggestion-icon-trending">
+                        <i class="s-suggestion-icon"></i>
+                    </div>
+                    <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                        <span class="s-heavy">15 days cleanse</span>
+                    </div>
+                    <div class="s-suggestion-trending-cont">
+                        <div class="s-suggestion-icon-trending">
+                            <i class="s-suggestion-icon"></i>
+                        </div>
+                        <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                            <span class="s-heavy">15 days cleanse</span>
+                        </div>
+                        <div class="s-suggestion-trending-cont">
+                            <div class="s-suggestion-icon-trending">
+                                <i class="s-suggestion-icon"></i>
+                            </div>
+                            <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                                <span class="s-heavy">15 days cleanse</span>
+                            </div>
+                            <div class="s-suggestion-trending-cont">
+                                <div class="s-suggestion-icon-trending">
+                                    <i class="s-suggestion-icon"></i>
+                                </div>
+                                <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                                    <span class="s-heavy">15 days cleanse</span>
+                                </div>
+                                <div class="s-suggestion-trending-cont">
+                                    <div class="s-suggestion-icon-trending">
+                                        <i class="s-suggestion-icon"></i>
+                                    </div>
+                                    <div class="s-suggestion-trending" role="button" aria-label="15 days cleanse">
+                                        <span class="s-heavy">15 days cleanse</span>
+                                    </div>
         </header>
         <main class="main">
             <div class="mainBanner">
