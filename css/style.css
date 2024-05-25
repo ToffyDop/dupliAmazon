@@ -6,6 +6,44 @@
 body{
     background-color: aquamarine;
 }
+.mainPopular{
+    max-width: 1263px;
+    height: 281.5px;
+    margin: auto;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainPopularCard{
+    padding: 10px 20px;
+}
+.mainPopularCard__titulo{
+    font-size: 21px;
+}
+.mainPopularCard__img{
+    max-width: 1200px;
+    height: 235px;
+    display: flex;
+    overflow-x: scroll;
+}
+/*       Estilos des scroll         */
+.mainPopularCard__img::-webkit-scrollbar{
+    height: 6px;
+    border-radius: 5px;
+}
+.mainPopularCard__img::-webkit-scrollbar:hover{
+    cursor: pointer;
+}
+.mainPopularCard__img::-webkit-scrollbar-thumb{
+    background-color: #aaa;
+    height: 100%;
+    border-radius: 5px;
+}
+.mainPopularCard__img::-webkit-scrollbar-thumb:hover{
+    background-color: #464646;
+    cursor: pointer;
+}
+
+/*        Estilos del footer         */
 .footer{
     margin: 0;
     width: 100%;
