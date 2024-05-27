@@ -1,17 +1,93 @@
 *{
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
 body{
     background-color: aquamarine;
 }
+/*     Estilos del header      */
+.header{
+    background-color: #c7511f;
+}
+.headerSuperior{
+    width: 100%;
+    height: 60px;
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+}
+.headerSuperior__Logo{
+    width: 111px;
+    height: 45px;
+}
+.headerSuperiorUbiacion{
+    display: flex;
+    align-items: end;
+    font-size: 12px;
+    color: #aaa;
+}
+.headerSuperiorUbiacion__icono{
+    width: 15px;
+    height: 18px;
+}
+.headerSuperiorUbiacion__parrafo{
+    display: flex;
+    flex-direction: column;
+}
+.headerSuperiorUbiacion__parrafoResaltado{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+}
+.headerSuperiorBuscar{
+    height: 40px;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.headerSuperiorBuscar__select, .headerSuperiorBuscar__input, .headerSuperiorBuscar__botton{
+    border: none;
+    width: 65px;
+    height: 100%;
+    background-color: #e6e6e6;
+    position: relative;
+    top: -5px;
+}
+.headerSuperiorBuscar__input{
+    width: 400px;
+    height: 100%;
+    background-color: #fff;
+    font-size: 16px;
+}
+.headerSuperiorBuscar__botton{
+    width: 40px;
+    top: 0;
+    background-color: #febd69;
+}
+.headerSuperiorBuscar__bottonIcono{
+    width: 20px;
+}
+
+.headerSuperiorIdioma__icono{
+    width: 21.6px;
+    height: 16.px;
+}
+
+
+.headerInferiormenu__SubMenuIcono{
+    width: 17px;
+    height: 14px;
+}
+/*     Estilos del main        */
 .mainPopular{
     max-width: 1263px;
     height: 281.5px;
     margin: auto;
     background-color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .mainPopularCard{
     padding: 10px 20px;
@@ -43,13 +119,55 @@ body{
     cursor: pointer;
 }
 
+.mainIdentificate{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+.mainIdentificate__div{
+    width: 100%;
+    height: 140px;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainIdentificate__divParrafaoSup, .mainIdentificate__divParrafoInf{
+    margin: 3px;
+    font-size: 13px;
+}
+.mainIdentificate__divButton{
+    width: 230px;
+    height: 28px;
+    padding: 3px 0;
+    font-weight: 700;
+    background: linear-gradient(to bottom, #ffd772, #ffc328);
+    border: 1px solid #e6a400;
+    border-radius: 4px;
+}
+.mainIdentificate__divButton:hover{
+    cursor: pointer;
+}
+.mainIdentificate__divParrafoInf{
+    margin-top: 6px;
+    font-size: 11px;
+}
+.mainIdentificate__divParrafoInfLink{
+    text-decoration: none;
+    color: #0085b8;
+}
+.mainIdentificate__divParrafoInfLink:hover{
+    color: #c7511f;
+    cursor: pointer;
+}
+
 /*        Estilos del footer         */
 .footer{
-    margin: 0;
     width: 100%;
     height: auto;
-    background-color: blueviolet;
-    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
 }
 .footerReInicio{
