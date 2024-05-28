@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aquamarine;
+    background-color: #e3e6e6;
 }
 /*     Estilos del header      */
 .header{
@@ -170,39 +170,69 @@ body{
     font-weight: 100;
 }
 /*     Estilos del main        */
-/*     Estilos de cards populares */
-.mainPopular{
-    max-width: 1263px;
-    height: 281.5px;
+.mainBanner{
+    width: 100%;
+    position: absolute;
+}
+.mainSectionCard{
+    width: 100%;
     margin: auto;
+    padding-top: 250px;
+    position: relative;
+}
+.mainSectionCardClasiFila-primerFila{
+    background: linear-gradient(to bottom, transparent, #e3e6e6);
+}
+.mainSectionCardClasiFila{
+    width: 100%;
+    padding: 0 1.5%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainSectionCardClasiFila-x1{
+    width: 300px;
+    height: 420px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*     Estilos de cards populares */
+.mainSectionCardPopular{
+    width: 97%;
+    height: 281.5px;
+    margin: 20px auto;
     background-color: #fff;
 }
-.mainPopularCard{
+.mainSectionCardPopular{
     padding: 10px 20px;
 }
-.mainPopularCard__titulo{
+.mainSectionCardPopular__titulo{
     font-size: 21px;
 }
-.mainPopularCard__img{
+.mainSectionCardPopular__img{
     max-width: 1200px;
     height: 235px;
     display: flex;
     overflow-x: scroll;
 }
 /*       Estilos des scroll Card de poductos TOP         */
-.mainPopularCard__img::-webkit-scrollbar{
+.mainSectionCardPopular__img::-webkit-scrollbar{
     height: 6px;
     border-radius: 5px;
 }
-.mainPopularCard__img::-webkit-scrollbar:hover{
+.mainSectionCardPopular__img::-webkit-scrollbar:hover{
     cursor: pointer;
 }
-.mainPopularCard__img::-webkit-scrollbar-thumb{
+.mainSectionCardPopular__img::-webkit-scrollbar-thumb{
     background-color: #aaa;
     height: 100%;
     border-radius: 5px;
 }
-.mainPopularCard__img::-webkit-scrollbar-thumb:hover{
+.mainSectionCardPopular__img::-webkit-scrollbar-thumb:hover{
     background-color: #464646;
     cursor: pointer;
 }
