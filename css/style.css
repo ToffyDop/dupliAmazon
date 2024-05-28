@@ -200,39 +200,55 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
+.mainSectionCardClasiFila-x1__titulo{
+    font-size: 21.5px;
+    color: #0f1111;
+}
+.mainSectionCardClasiFila-x1__productos{
+    width: 100%;
+}
+.mainSectionCardClasiFila-x1__productos:hover{
+    cursor: pointer;
+}
+.mainSectionCardClasiFila-x1__link{
+    font-size: 12px;
+    display: inline;
+}
 /*     Estilos de cards populares */
-.mainSectionCardPopular{
+.mainSectionCardPopularFila{
     width: 97%;
     height: 281.5px;
     margin: 20px auto;
     background-color: #fff;
-}
-.mainSectionCardPopular{
     padding: 10px 20px;
 }
-.mainSectionCardPopular__titulo{
-    font-size: 21px;
+.mainSectionCardPopularFila__titulo{
+    font-size: 21.5px;
+    margin-bottom: 3px;
 }
-.mainSectionCardPopular__img{
-    max-width: 1200px;
+.mainSectionCardPopularFila__img{
     height: 235px;
     display: flex;
     overflow-x: scroll;
 }
+.mainSectionCardPopularFila__imgItem{
+    height: 220px;
+}
 /*       Estilos des scroll Card de poductos TOP         */
-.mainSectionCardPopular__img::-webkit-scrollbar{
+.mainSectionCardPopularFila__img::-webkit-scrollbar{
+    margin: 10px;
     height: 6px;
     border-radius: 5px;
 }
-.mainSectionCardPopular__img::-webkit-scrollbar:hover{
+.mainSectionCardPopularFila__img::-webkit-scrollbar:hover{
     cursor: pointer;
 }
-.mainSectionCardPopular__img::-webkit-scrollbar-thumb{
+.mainSectionCardPopularFila__img::-webkit-scrollbar-thumb{
     background-color: #aaa;
     height: 100%;
     border-radius: 5px;
 }
-.mainSectionCardPopular__img::-webkit-scrollbar-thumb:hover{
+.mainSectionCardPopularFila__img::-webkit-scrollbar-thumb:hover{
     background-color: #464646;
     cursor: pointer;
 }
@@ -273,11 +289,11 @@ body{
     margin-top: 6px;
     font-size: 11px;
 }
-.mainIdentificate__divParrafoInfLink{
+.mainIdentificate__divParrafoInfLink, .mainSectionCardClasiFila-x1__link{
     text-decoration: none;
     color: #0085b8;
 }
-.mainIdentificate__divParrafoInfLink:hover{
+.mainIdentificate__divParrafoInfLink:hover, .mainSectionCardClasiFila-x1__link:hover{
     color: #c7511f;
     cursor: pointer;
 }
@@ -458,4 +474,8 @@ body{
 .footerInf__politicasParrafoCopyright{
     color: #ddd;
     font-size: 12px;
+}
+/*    Seccion osculta    */
+.seccionOculta{
+    display: none;
 }
